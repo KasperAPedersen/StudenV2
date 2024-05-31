@@ -8,6 +8,20 @@
         <link rel="stylesheet" href="inc/styling/css/index.css" type="text/css">
     </head>
     <body>
+        <!-- pop up -->
+        <div id="popup" class="w3-modal w3-animate-opacity" style="display: block;">
+            <div class="w3-modal-content w3-card-4">
+                <header class="w3-container w3-aqua"> 
+                    <span onclick="document.getElementById('popup').style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+                    <h2>Velkommen til Studen V2</h2>
+                </header>
+                <div class="w3-container">
+                    <p>Denne side fungerer som et proof of concept website for studen.dk<br>Hænvendelser foregår via min LinkedIn eller på E-mail</p>
+                    <p><a href="https://www.linkedin.com/in/kasper-pedersen-317622292/">LinkedIn (kasper-pedersen-317622292)</a><br>E-mail: kasperpedersen1999@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
         <nav class="w3-cell-row w3-card-4" style="max-width: 1080px; margin: 0 auto;">
             <div class="w3-cell w3-third w3-display-container">
                 <img src="inc/images/logo.gif" alt="Studen logo" class="w3-display-middle">
@@ -107,6 +121,24 @@
                     </div>
                 </div>
 
+                <!-- subs page -->
+                <div class="w3-cell w3-threequarter" id="subsContentDiv">
+                    <div id="contentMain">
+                        <div class="w3-card-4">
+                            <h3>Substitutter</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- blog page -->
+                <div class="w3-cell w3-threequarter" id="blogContentDiv">
+                    <div id="contentMain">
+                        <div class="w3-card-4">
+                            <h3>Blog</h3>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- members page -->
                 <div class="w3-cell w3-threequarter" id="membersContentDiv">
                     <div id="contentMain">
@@ -115,7 +147,7 @@
                         </div>
                         <div class="w3-card-4">
                             <table class="w3-table w3-bordered w3-striped w3-small w3-centered">
-                                <thead class="w3-cyan">
+                                <thead>
                                     <th>Fornavn</th>
                                     <th>Efternavn</th>
                                     <th>DBF (#)</th>
@@ -127,7 +159,7 @@
                                     <th>Adresse</th>
                                 </thead>
                                 <tbody>
-                                    <tr class="w3-hoverable w3-hover-cyan">
+                                    <tr class="w3-hoverable w3-hover-aqua">
                                         <td>Anders Drejer</td>
                                         <td>Nygaard</td>
                                         <td>83570</td>
@@ -138,7 +170,7 @@
                                         <td></td>
                                         <td></td>
                                     </tr>
-                                    <tr class="w3-hoverable w3-hover-cyan">
+                                    <tr class="w3-hoverable w3-hover-aqua">
                                         <td>Anne Mette</td>
                                         <td>Staugaard</td>
                                         <td>11250</td>
@@ -149,7 +181,7 @@
                                         <td></td>
                                         <td></td>
                                     </tr>
-                                    <tr class="w3-hoverable w3-hover-cyan">
+                                    <tr class="w3-hoverable w3-hover-aqua">
                                         <td>Birger</td>
                                         <td>Jonasen</td>
                                         <td>34493</td>
@@ -160,7 +192,7 @@
                                         <td>hjem: 20 14 99 11<br>mobil: 20 14 99 11</td>
                                         <td></td>
                                     </tr>
-                                    <tr class="w3-hoverable w3-hover-cyan">
+                                    <tr class="w3-hoverable w3-hover-aqua">
                                         <td>Dan</td>
                                         <td>Mungaard</td>
                                         <td>8716</td>
@@ -188,16 +220,16 @@
                             <div class="w3-cell w3-quarter">
                                 <div class="w3-card-4">
                                     <table class="w3-table w3-bordered w3-striped w3-small w3-centered">
-                                        <thead class="w3-cyan">
+                                        <thead>
                                             <th>Clubmand</th>
                                             <th>Mesterskaber</th>
                                         </thead>
                                         <tbody>
-                                            <tr class="w3-hoverable w3-hover-cyan">
+                                            <tr class="w3-hoverable w3-hover-aqua">
                                                 <td>Peter Lund</td>
                                                 <td>16</td>
                                             </tr>
-                                            <tr class="w3-hoverable w3-hover-cyan">
+                                            <tr class="w3-hoverable w3-hover-aqua">
                                                 <td>Henrik Kruse Petersen</td>
                                                 <td>11</td>
                                             </tr>
@@ -210,28 +242,28 @@
                             <div class="w3-cell w3-threequarter" style="width: calc(75% - 15px); margin-left: 15px;">
                                 <div class="w3-card-4">
                                     <table class="w3-table w3-bordered w3-striped w3-small w3-centered">
-                                        <thead class="w3-cyan">
+                                        <thead>
                                             <th>Sæson</th>
                                             <th>Holdmestre</th>
                                             <th>Parmestre</th>
                                         </thead>
                                         <tbody>
-                                            <tr class="w3-hoverable w3-hover-cyan">
+                                            <tr class="w3-hoverable w3-hover-aqua">
                                                 <td>18/19</td>
                                                 <td>Henrik Kruse Petersen, Peter Lund, Durrin Hynes, Kjeld Hansen</td>
                                                 <td>Henrik Kruse Petersen, Peter Lund</td>
                                             </tr>
-                                            <tr class="w3-hoverable w3-hover-cyan">
+                                            <tr class="w3-hoverable w3-hover-aqua">
                                                 <td>17/18</td>
                                                 <td>Claus Jensen, Michael Beck, Lars Ejskjær, Pim Bussink, Niels Agger</td>
                                                 <td>Claus Jensen, Michael Beck</td>
                                             </tr>
-                                            <tr class="w3-hoverable w3-hover-cyan">
+                                            <tr class="w3-hoverable w3-hover-aqua">
                                                 <td>16/17</td>
                                                 <td>Jens Astrup, Mikael Velschow-Rasmussen, Dan Nybo Jensen, Preben Thaarup</td>
                                                 <td>Henrik Kruse Petersen, Peter Lund</td>
                                             </tr>
-                                            <tr class="w3-hoverable w3-hover-cyan">
+                                            <tr class="w3-hoverable w3-hover-aqua">
                                                 <td>15/16</td>
                                                 <td>Durrin Hynes, Kjeld Hansen, Peter Lund, Henrik Kruse Petersen</td>
                                                 <td>Peter Bang Knudsen, Dan Nybo</td>

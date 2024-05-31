@@ -18,7 +18,7 @@
 /* nav */
 
 .activeNav {
-    background-color: aquamarine;
+    background-color: cyan;
 }
 
 nav div p {
@@ -31,7 +31,7 @@ nav div p {
 }
 
 nav div p:hover {
-    background-color: aquamarine;
+    background-color: cyan;
     cursor: pointer;
 }
 
@@ -101,10 +101,10 @@ nav div {
 
 /* Results page */
 
-#resultsContentDiv, #welcomeContentDiv /* remove welcome from ruleset when finished */, #membersContentDiv, #hallContentDiv {
+#resultsContentDiv, #membersContentDiv, #hallContentDiv, #subsContentDiv, #blogContentDiv, #welcomeContentDiv {
     display: none;
 }
 
-#welcomeContentDiv {
+#membersContentDiv {
     display: block;
 }

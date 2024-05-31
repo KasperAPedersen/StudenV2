@@ -58,6 +58,8 @@ function resetPost() {
 function setPage(elem, page){
     document.getElementById('welcomeContentDiv').style.display = 'none';
     document.getElementById('resultsContentDiv').style.display = 'none';
+    document.getElementById('subsContentDiv').style.display = 'none';
+    document.getElementById('blogContentDiv').style.display = 'none';
     document.getElementById('membersContentDiv').style.display = 'none';
     document.getElementById('hallContentDiv').style.display = 'none';
 
