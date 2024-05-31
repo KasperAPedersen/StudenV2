@@ -6,22 +6,30 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1080px;
+    max-width: 1024px;
     position: relative;
     top: 15px;
-}
-
-#swp #a { 
-    background-color: red;
+    width: calc(100% - 30px);
 }
 
 /* nav */
 
-.activeNav {
-    background-color: cyan;
+nav .container {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: calc(100% - 30px);
 }
 
-nav div p {
+.activeNav {
+    background-color: cyan;
+    color: white;
+}
+
+nav .container div:first-of-type img {
+    max-width: calc(100% - 30px);
+}
+
+nav .container div:nth-of-type(2) p {
     height: 100%;
     display: inline-block;
     font-size: 16px;
@@ -30,12 +38,12 @@ nav div p {
     margin: 0;
 }
 
-nav div p:hover {
+nav .container div:nth-of-type(2) p:hover {
     background-color: cyan;
     cursor: pointer;
 }
 
-nav div {
+nav .container div {
     height: 100px;
 }
 
@@ -52,15 +60,16 @@ nav div {
 
 #welcome #welcomeSidebar h5 {
     text-align: center;
-    padding: 15px 30px 0px 30px;
     font-weight: bold;
 }
 
-#welcome #welcomeSidebar h5 span {
+#welcome #welcomeSidebar p span {
     font-size: 10px;
     position: relative;
     top: calc((10px - 16px) / 2);
     color: gray;
+    display: block;
+    line-height: 0.5;
 }
 
 #welcome #results, #welcome #discussions, #welcome #info {
@@ -79,6 +88,15 @@ nav div {
 
 #welcome #welcomeContentDiv div .content {
     padding: 0px 15px;
+}
+
+#welcome #welcomeContentDiv div .content p {
+    width: 100%;
+}
+
+#welcome #welcomeContentDiv div .content p span {
+    float: right;
+    color: gray;
 }
 
 #welcome #welcomeContentDiv div h5 {
@@ -105,6 +123,121 @@ nav div {
     display: none;
 }
 
-#membersContentDiv {
+#welcomeContentDiv {
     display: block;
+}
+
+/* mobileNav */
+nav>.container>#mobileNav {
+    display: none;
+}
+
+#openMobileNav {
+    overflow: initial;
+}
+
+#openMobileNav div header {
+    text-align: center;
+}
+
+#openMobileNav div div:first-of-type p {
+    text-align: center;
+    margin: 0;
+    padding: 15px 0px;
+    font-size: 16px;
+}
+
+#openMobileNav div div:first-of-type p:hover {
+    color: aqua;
+}
+
+#openMobileNav div div {
+    height: auto;
+    padding: 15px 0px;
+}
+
+/* sidebar */
+#welcomeSidebar {
+    width: calc(25% - 15px);
+    margin-right: 15px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 930px) {
+    nav>.container>div:nth-of-type(2) {
+        display: none;
+    }
+
+    nav>.container>#mobileNav {
+        display: block;
+        text-align: right;
+        font-size: 24px;
+        padding: calc((100px - 24px) / 2) 30px;
+    }
+
+    nav>.container>#mobileNav p:hover {
+        cursor: pointer;
+    }
+
+    .activeNav {
+        background-color: white;
+        color: aqua;
+    }
+}
+
+@media only screen and (max-width: 862px) {
+    #welcomeSidebar {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #welcomeSidebar>div {
+        width: calc((100% / 3));
+        height: auto;
+        padding: 0;
+        margin: 5px;
+    }
+
+    #welcomeSidebar>div:first-of-type {
+        margin-left: 0px;
+    }
+
+    #welcomeSidebar>div:last-of-type {
+        margin-right: 0px;
+    }
+
+    
+
+    #resultsContentDiv, #membersContentDiv, #hallContentDiv, #subsContentDiv, #blogContentDiv, #welcomeContentDiv {
+        width: calc(100%);
+    }
+
+    #contentMain>div:first-of-type {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav>.container>div:first-of-type {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    
+    #welcomeSidebar {
+        display: block;
+    }
+
+    #welcomeSidebar>div {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    
 }

@@ -57,6 +57,8 @@ function resetPost() {
 // Change pages
 function setPage(elem, page){
     document.getElementById('welcomeContentDiv').style.display = 'none';
+    document.getElementById('welcomeSidebar').style.display = 'none';
+    
     document.getElementById('resultsContentDiv').style.display = 'none';
     document.getElementById('subsContentDiv').style.display = 'none';
     document.getElementById('blogContentDiv').style.display = 'none';
@@ -69,6 +71,8 @@ function setPage(elem, page){
     }
 
     document.getElementById(`${page}ContentDiv`).style.display = 'block';
+    if(page == 'welcome') document.getElementById('welcomeSidebar').style.display = (document.body.offsetWidth <= 862 ? 'flex' : 'block');
+    
     elem.className = 'activeNav';
 }
 
