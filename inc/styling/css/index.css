@@ -16,6 +16,10 @@ p {
     width: calc(100% - 30px);
 }
 
+.hidden {
+    display: none;
+}
+
 
 /* nav */
 
@@ -133,8 +137,9 @@ nav .container div {
 }
 
 /* mobileNav */
-nav>.container>#mobileNav {
-    display: none;
+
+#mobileNav i {
+    cursor: pointer;
 }
 
 #openMobileNav {
@@ -192,6 +197,10 @@ nav>.container>#mobileNav {
     .activeNav {
         background-color: white;
         color: aqua;
+    }
+    
+    #mobileNav {
+        display: block;
     }
 }
 
@@ -251,9 +260,5 @@ nav>.container>#mobileNav {
 @media only screen and (max-width: 450px) {
     #swp .w3-cell-row {
         display: block;
-    }
-
-    nav .container div:first-of-type img {
-        border: 1px solid red;
     }
 }
