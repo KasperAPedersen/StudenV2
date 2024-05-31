@@ -101,10 +101,10 @@ nav div {
 
 /* Results page */
 
-#resultsContentDiv, #welcomeContentDiv {
+#resultsContentDiv, #welcomeContentDiv /* remove welcome from ruleset when finished */, #membersContentDiv, #hallContentDiv {
     display: none;
 }
 
-#resultsContentDiv {
+#welcomeContentDiv {
     display: block;
 }

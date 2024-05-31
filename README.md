@@ -8,8 +8,8 @@
 * ✖ Results
 * ✖ Subs
 * ✖ Discussion
-* ✖ Members
-* ✖ Hall of Fame
+* ✓ Members
+* ✓ Hall of Fame
 
 ## Back-end
 * ✓ Frontpage

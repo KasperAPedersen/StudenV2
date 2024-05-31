@@ -58,6 +58,8 @@ function resetPost() {
 function setPage(elem, page){
     document.getElementById('welcomeContentDiv').style.display = 'none';
     document.getElementById('resultsContentDiv').style.display = 'none';
+    document.getElementById('membersContentDiv').style.display = 'none';
+    document.getElementById('hallContentDiv').style.display = 'none';
 
     let navButtons = document.getElementsByClassName('activeNav');
     for(let i = 0; i < navButtons.length; i++) {
@@ -67,3 +69,22 @@ function setPage(elem, page){
     document.getElementById(`${page}ContentDiv`).style.display = 'block';
     elem.className = 'activeNav';
 }
+
+
+// use to import members page
+/*
+let tmp = "";
+
+let e = document.getElementsByTagName('tr');
+for(let i = 0; i < e.length; i++){
+    if(e[i].className == "lige" || e[i].className == "ulige") {
+        let c = e[i].children;
+        tmp += "<tr>\n";
+        for(let o = 0; o < 7; o++){
+            tmp += `    <td>${c[o].innerText}</td>\n`;
+        }
+        tmp += "</tr>\n";
+    }
+}
+console.log(tmp);
+*/
