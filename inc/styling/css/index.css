@@ -2,6 +2,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+p {
+    word-break: break-all;
+}
+
 #swp {
     margin: 0 auto;
     padding: 0;
@@ -11,6 +15,7 @@
     top: 15px;
     width: calc(100% - 30px);
 }
+
 
 /* nav */
 
@@ -60,10 +65,10 @@ nav .container div {
 
 #welcome #welcomeSidebar h5 {
     text-align: center;
-    font-weight: bold;
+    padding: 15px 0px 0px 0px;
 }
 
-#welcome #welcomeSidebar p span {
+#welcome #welcomeSidebar h5 span {
     font-size: 10px;
     position: relative;
     top: calc((10px - 16px) / 2);
@@ -162,6 +167,11 @@ nav>.container>#mobileNav {
     margin-right: 15px;
 }
 
+/* aaaa */
+#resultsContentDiv, #subsContentDiv, #blogContentDiv, #membersContentDiv, #hallContentDiv {
+    width: 100%;
+}
+
 /* Responsive */
 @media only screen and (max-width: 930px) {
     nav>.container>div:nth-of-type(2) {
@@ -239,5 +249,11 @@ nav>.container>#mobileNav {
 }
 
 @media only screen and (max-width: 450px) {
-    
+    #swp .w3-cell-row {
+        display: block;
+    }
+
+    nav .container div:first-of-type img {
+        border: 1px solid red;
+    }
 }
